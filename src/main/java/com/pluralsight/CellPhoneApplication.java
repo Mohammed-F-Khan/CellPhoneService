@@ -31,7 +31,15 @@ public class CellPhoneApplication {
         System.out.print("What is the owner?: ");
         String owner = scanner.nextLine();
 
-        myPhone.setModel(owner);
+        myPhone.setOwner(owner);
+
+        myPhone.dial("555-555-5555");
+
+        CellPhone yourPhone = new CellPhone(12345,"pixel","f1","888-888-8888","Hignacio" );
+
+        myPhone.dial(yourPhone);
+
+        yourPhone.dial(myPhone);
     }
 
     private static void display(CellPhone phone){
