@@ -33,4 +33,12 @@ public class CellPhoneApplication {
 
         myPhone.setModel(owner);
     }
+
+    private static void display(CellPhone phone){
+        System.out.println("-------------------------");
+        System.out.println("CELL PHONE [SN:" + phone.getSerialNumber() + "]");
+        System.out.println("  Owner:  " + phone.getOwner());
+        System.out.println("  Model  " + phone.getOwner());
+        System.out.println(" Number  " + phone.getPhoneNumber());
+    }
 }
